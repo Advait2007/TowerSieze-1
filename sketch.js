@@ -9,7 +9,7 @@ var backgroundImg,platform;
 var ball, slingShot;
 
 function preload() {
-    backgroundImg = loadImage("sprites/bg.png");
+    backgroundImg = loadImage("background.png");
 }
 
 function setup(){
@@ -72,7 +72,7 @@ function mouseDragged(){
    ball.body.position.y = mouseY;
 }
 
-function mouseReleased() {
+/*function mouseReleased() {
 slingShot.fly();
-}
+}*/
 
