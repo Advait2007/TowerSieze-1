@@ -5,9 +5,9 @@ class Ball{
           'friction':1.0,
           'density':1.0
       }
-      this.body = Bodies.polygon(x, y,6,20, options);
-      // this.image=loadImage("ball2.jpg")
-      // this.image.scale=0.5
+      this.body = Bodies.circle(x, y,20, options);
+      this.image=loadImage("pentagon.png")
+      this.image.scale=0.5
       this.x = x;
       this.y = y;
       this.width = 20;
@@ -22,8 +22,8 @@ class Ball{
       push();
       translate(this.body.position.x, this.body.position.y);
       rotate(angle);
-      rect(this.x,this.y,6,20)
-      //image(this.image,0, 0,this.width,this.height);
+      //rect(this.x,this.y,6,20)
+      image(this.image,0, 0,this.width,this.height);
       pop();
     }
   }
